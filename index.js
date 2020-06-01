@@ -84,8 +84,8 @@ export default class QRCodeScanner extends Component {
 				</Text>
 			</View>
 		),
-		permissionDialogTitle: 'Info',
-		permissionDialogMessage: 'Need camera permission',
+		permissionDialogTitle: 'Information',
+		permissionDialogMessage: 'Vous devez autoriser l\'utilisation de l\'appareil photo de votre téléphone pour utiliser ce service',
 		buttonPositive: 'OK',
 		checkAndroid6Permissions: false,
 		flashMode: CAMERA_FLASH_MODE.auto,
