@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { StyleSheet, Dimensions, Vibration, Animated, Easing, View, Text, Platform, TouchableWithoutFeedback, PermissionsAndroid } from 'react-native';
+import { StyleSheet, Dimensions, Vibration, Animated, Easing, View, Text, Platform, TouchableWithoutFeedback, PermissionsAndroid, Linking } from 'react-native';
 
 import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
 import { RNCamera as Camera } from 'react-native-camera';
@@ -57,12 +57,13 @@ export default class QRCodeScanner extends Component {
 				}}
 			>
 				<Text
+					onPress={() => Linking.openURL('app-settings:')}
 					style={{
 						textAlign: 'center',
 						fontSize: 16,
 					}}
 				>
-					Camera not authorized
+					{"Vous devez accorder l\'accès à votre appareil photo pour utiliser cette fonctionnalités. Vous pouvez modifier les autorisation de l\'application en suivant ce lien"}
 				</Text>
 			</View>
 		),
