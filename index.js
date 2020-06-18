@@ -63,7 +63,7 @@ export default class QRCodeScanner extends Component {
 						fontSize: 16,
 					}}
 				>
-					{"Vous devez accorder l\'accès à votre appareil photo pour utiliser cette fonctionnalités. Vous pouvez modifier les autorisation de l\'application en suivant ce lien"}
+					{"Vous devez accorder l\'accès à votre appareil photo pour utiliser cette fonctionnalités.\nVous pouvez modifier les autorisation de l\'application en clickant ici"}
 				</Text>
 			</View>
 		),
