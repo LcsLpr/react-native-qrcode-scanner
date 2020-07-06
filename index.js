@@ -61,9 +61,11 @@ export default class QRCodeScanner extends Component {
 					style={{
 						textAlign: 'center',
 						fontSize: 16,
+						color: 'white'
 					}}
 				>
-					{"Vous devez accorder l\'accès à votre appareil photo pour utiliser cette fonctionnalités.\nVous pouvez modifier les autorisation de l\'application en clickant ici"}
+					{"Vous devez autoriser l’accès à votre appareil photo pour accéder à cette fonctionnalité.\nCliquez sur ce message pour modifier les autorisations de l’application."}
+					{/* {"Vous devez accorder l\'accès à votre appareil photo pour utiliser cette fonctionnalités.\nVous pouvez modifier les autorisation de l\'application en clickant ici"} */}
 				</Text>
 			</View>
 		),
@@ -86,7 +88,8 @@ export default class QRCodeScanner extends Component {
 			</View>
 		),
 		permissionDialogTitle: 'Information',
-		permissionDialogMessage: 'Vous devez autoriser l\'utilisation de l\'appareil photo de votre téléphone pour utiliser ce service',
+		permissionDialogMessage: 'Vous devez autoriser l’accès à votre appareil photo pour accéder à cette fonctionnalité.\nCliquez sur ce message pour modifier les autorisations de l’application.',
+		// permissionDialogMessage: 'Vous devez autoriser l\'utilisation de l\'appareil photo de votre téléphone pour utiliser ce service',
 		buttonPositive: 'OK',
 		checkAndroid6Permissions: false,
 		flashMode: CAMERA_FLASH_MODE.auto,
